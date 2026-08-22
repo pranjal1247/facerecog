@@ -1,0 +1,6 @@
+*.zip
+kodeinkgp-attendance.zip
+
+**/_venv/
+**/.venv/
+.venv/

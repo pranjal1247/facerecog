@@ -1,0 +1,34 @@
+{
+    "member_01": {
+        "name": "Pranjal",
+        "title": "Senior Executive Member",
+        "department": "EECE",
+        "hall": "Azad Hall",
+        "year": "2nd Year",
+        "fun_fact": "Once debugged a WebSocket for 1 hours over a missing pip package."
+    },
+    "member_02": {
+        "name": "Brishal",
+        "title": "Senior Executive Member",
+        "department": "Civil",
+        "hall": "Azad Hall",
+        "year": "2nd Year",
+        "fun_fact": "Once debugged a WebSocket for 2 hours over a missing pip package."
+    },
+    "member_03": {
+        "name": "Akash Sahu",
+        "title": "Senior Executive Member",
+        "department": "MF",
+        "hall": "MMM Hall",
+        "year": "2nd Year",
+        "fun_fact": "Once debugged a WebSocket for 3 hours over a missing pip package."
+    },
+    "member_04": {
+        "name": "Mohit",
+        "title": "Senior Executive Member",
+        "department": "MF",
+        "hall": "Azad Hall",
+        "year": "2nd Year",
+        "fun_fact": "Once debugged a WebSocket for 4 hours over a missing pip package."
+    }
+}
