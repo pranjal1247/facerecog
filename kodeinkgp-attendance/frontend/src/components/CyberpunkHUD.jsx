@@ -217,17 +217,16 @@ export default function CyberpunkHUD() {
                     style={{
                       position: 'absolute',
                       top: 0,
-                      [flipLeft ? 'right' : 'left']: flipLeft ? 'calc(100% + 12px)' : 'calc(100% + 12px)',
+                      [flipLeft ? 'right' : 'left']: 'calc(100% + 12px)',
                       borderColor: themeColor,
                     }}
-                    className="w-56 bg-black/80 backdrop-blur border px-3 py-2 text-xs space-y-1 shadow-[0_0_15px_rgba(0,255,153,0.3)]"
+                    className="w-80 bg-black/80 backdrop-blur border px-4 py-3 text-sm space-y-2 shadow-[0_0_15px_rgba(0,255,153,0.3)]"
                   >
-                    <div className="text-emerald-400 font-bold tracking-widest text-sm">{profile.name}</div>
-                    <div className="text-cyan-300">{profile.department}</div>
-                    {profile.hall && <div className="text-cyan-300">🏠 {profile.hall}</div>}
-                    {profile.year && <div className="text-cyan-300">🎓 {profile.year}</div>}
+                    <div className="text-emerald-400 font-bold tracking-widest text-lg">{profile.name}</div>
+                    {profile.department && <div className="text-cyan-300">{profile.department}</div>}
+                    {profile.title && <div className="text-cyan-300">{profile.title}</div>}
                     {profile.fun_fact && (
-                      <div className="text-amber-300 italic pt-1 border-t border-cyan-500/20">
+                      <div className="text-amber-300 italic pt-2 border-t border-cyan-500/20">
                         "{profile.fun_fact}"
                       </div>
                     )}

@@ -120,6 +120,7 @@ def run_inference(frame, orig_w, orig_h, tracker):
 
     # Fast path: detection only, every single frame
     bboxes, kpss = det_model.detect(frame, max_num=0, metric='default')
+    bboxes, kpss = dedup_detections(bboxes, kpss)   # <-- add this line
     tracks_out = []
 
     for i in range(bboxes.shape[0]):
@@ -211,6 +212,41 @@ async def websocket_endpoint(websocket: WebSocket):
     except Exception as fatal_err:
         print(f"[WebSocket Fatal Error] {fatal_err}")
 
+
+def iou(box_a, box_b):
+    xa1, ya1, xa2, ya2 = box_a
+    xb1, yb1, xb2, yb2 = box_b
+
+    inter_x1, inter_y1 = max(xa1, xb1), max(ya1, yb1)
+    inter_x2, inter_y2 = min(xa2, xb2), min(ya2, yb2)
+    inter_w, inter_h = max(0, inter_x2 - inter_x1), max(0, inter_y2 - inter_y1)
+    inter_area = inter_w * inter_h
+
+    area_a = max(0, xa2 - xa1) * max(0, ya2 - ya1)
+    area_b = max(0, xb2 - xb1) * max(0, yb2 - yb1)
+    union = area_a + area_b - inter_area
+    return inter_area / union if union > 0 else 0
+
+
+def dedup_detections(bboxes, kpss, iou_thresh=0.4):
+    """Collapse overlapping detections of the same face into one, since
+    calling det_model.detect() directly (bypassing app_face.get()) skips
+    some of InsightFace's internal duplicate filtering."""
+    keep_idx = []
+    boxes_2d = [bboxes[i, 0:4] for i in range(bboxes.shape[0])]
+
+    for i, box in enumerate(boxes_2d):
+        is_dup = False
+        for j in keep_idx:
+            if iou(box, boxes_2d[j]) > iou_thresh:
+                is_dup = True
+                break
+        if not is_dup:
+            keep_idx.append(i)
+
+    kept_bboxes = bboxes[keep_idx]
+    kept_kpss = kpss[keep_idx] if kpss is not None else None
+    return kept_bboxes, kept_kpss
 
 if __name__ == "__main__":
     uvicorn.run(

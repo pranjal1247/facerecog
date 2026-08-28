@@ -30,5 +30,45 @@
         "hall": "Azad Hall",
         "year": "2nd Year",
         "fun_fact": "Once debugged a WebSocket for 4 hours over a missing pip package."
+    },
+    "member_05": {
+        "name": "Aniruddha",
+        "title": "Senior Executive Member",
+        "department": "NA",
+        "hall": "RP Hall",
+        "year": "2nd Year",
+        "fun_fact": "Once debugged a WebSocket for 5 hours over a missing pip package."
+    },
+    "member_06": {
+        "name": "Parth",
+        "title": "Senior Executive Member",
+        "department": "BT",
+        "hall": "MS Hall",
+        "year": "2nd Year",
+        "fun_fact": "Once debugged a WebSocket for 6 hours over a missing pip package."
+    },
+    "member_07": {
+        "name": "oishik",
+        "title": "Senior Executive Member",
+        "department": "Meta",
+        "hall": "MMM Hall",
+        "year": "2nd Year",
+        "fun_fact": "Once debugged a WebSocket for 6 hours over a missing pip package."
+    },
+    "member_08": {
+        "name": "Ayush",
+        "title": "Senior Executive Member",
+        "department": "AI",
+        "hall": "MMM Hall",
+        "year": "2nd Year",
+        "fun_fact": "Once debugged a WebSocket for 6 hours over a missing pip package."
+    },
+    "member_09": {
+        "name": "Aarushi",
+        "title": "Senior Executive Member",
+        "department": " ",
+        "hall": "Ladies Hall",
+        "year": "2nd Year",
+        "fun_fact": "Once debugged a WebSocket for 6 hours over a missing pip package."
     }
 }
