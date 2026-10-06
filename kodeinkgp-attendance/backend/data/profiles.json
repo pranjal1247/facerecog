@@ -1,74 +1,82 @@
 {
     "member_01": {
-        "name": "Pranjal",
-        "title": "Senior Executive Member",
-        "department": "EECE",
-        "hall": "Azad Hall",
-        "year": "2nd Year",
-        "fun_fact": "Once debugged a WebSocket for 1 hours over a missing pip package."
-    },
-    "member_02": {
-        "name": "Brishal",
-        "title": "Senior Executive Member",
-        "department": "Civil",
-        "hall": "Azad Hall",
-        "year": "2nd Year",
-        "fun_fact": "Once debugged a WebSocket for 2 hours over a missing pip package."
-    },
-    "member_03": {
         "name": "Akash Sahu",
         "title": "Senior Executive Member",
         "department": "MF",
+        "hall": "Azad Hall",
+        "year": "2nd Year",
+        "fun_fact": "group project me sabse kaam ki chiz skills nhi, dusre se kaam nikalwana hota hai.."
+    },
+    "member_02": {
+        "name": "Aarushi Ghosh",
+        "title": "Senior Executive Member",
+        "department": "CH",
+        "hall": "Azad Hall",
+        "year": "2nd Year",
+        "fun_fact": "No mercy drama queen"
+    },
+    "member_03": {
+        "name": "Oishik Pal",
+        "title": "Senior Executive Member",
+        "department": "Metallurgy",
         "hall": "MMM Hall",
         "year": "2nd Year",
-        "fun_fact": "Once debugged a WebSocket for 3 hours over a missing pip package."
+        "fun_fact": "My search history probably looks like it belongs to five different people."
     },
     "member_04": {
-        "name": "Mohit",
+        "name": "Rupam Singh",
         "title": "Senior Executive Member",
         "department": "MF",
         "hall": "Azad Hall",
         "year": "2nd Year",
-        "fun_fact": "Once debugged a WebSocket for 4 hours over a missing pip package."
+        "fun_fact": "Error 404"
     },
     "member_05": {
-        "name": "Aniruddha",
+        "name": "Kaustubh Bobade",
         "title": "Senior Executive Member",
-        "department": "NA",
+        "department": "MF",
         "hall": "RP Hall",
         "year": "2nd Year",
-        "fun_fact": "Once debugged a WebSocket for 5 hours over a missing pip package."
+        "fun_fact": "Alarms can't wake me up"
     },
     "member_06": {
-        "name": "Parth",
+        "name": "Harshit Nayak",
         "title": "Senior Executive Member",
-        "department": "BT",
+        "department": "Electrical",
         "hall": "MS Hall",
         "year": "2nd Year",
-        "fun_fact": "Once debugged a WebSocket for 6 hours over a missing pip package."
+        "fun_fact": "skater boy"
     },
     "member_07": {
-        "name": "oishik",
+        "name": "Ishant Verma",
         "title": "Senior Executive Member",
-        "department": "Meta",
+        "department": "Electrical",
         "hall": "MMM Hall",
         "year": "2nd Year",
-        "fun_fact": "Once debugged a WebSocket for 6 hours over a missing pip package."
+        "fun_fact": "Bahut shaant svbahv ka hai par kabhi kabhi chilla deta hai"
     },
     "member_08": {
-        "name": "Ayush",
+        "name": "Sahil Akash",
         "title": "Senior Executive Member",
-        "department": "AI",
+        "department": "CSE",
         "hall": "MMM Hall",
         "year": "2nd Year",
-        "fun_fact": "Once debugged a WebSocket for 6 hours over a missing pip package."
+        "fun_fact": "Unpredictable banda"
     },
     "member_09": {
-        "name": "Aarushi",
+        "name": "Amogh Saagar",
         "title": "Senior Executive Member",
-        "department": " ",
+        "department": "Electronics",
         "hall": "Ladies Hall",
         "year": "2nd Year",
-        "fun_fact": "Once debugged a WebSocket for 6 hours over a missing pip package."
+        "fun_fact": "Works on dopamine induced mania"
+    },
+    "member_10": {
+        "name": "Brishal Das",
+        "title": "IIT KGP Member",
+        "department": "Civil",
+        "hall": "",
+        "year": "",
+        "fun_fact": "civil DR1, press F for respect"
     }
 }
